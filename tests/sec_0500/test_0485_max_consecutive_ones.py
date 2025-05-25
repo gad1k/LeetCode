@@ -6,10 +6,12 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        self.assertEqual(3, self.s.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]))
+        r = self.s.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1])
+        self.assertEqual(3, r)
 
     def test02(self):
-        self.assertEqual(2, self.s.findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1]))
+        r = self.s.findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1])
+        self.assertEqual(2, r)
 
 
 if __name__ == '__main__':
