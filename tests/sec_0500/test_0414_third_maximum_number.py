@@ -6,13 +6,13 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        self.assertEqual(self.s.thirdMax([3, 2, 1]), 1)
+        self.assertEqual(1, self.s.thirdMax([3, 2, 1]))
 
     def test02(self):
-        self.assertEqual(self.s.thirdMax([1, 2]), 2)
+        self.assertEqual(2, self.s.thirdMax([1, 2]))
 
     def test03(self):
-        self.assertEqual(self.s.thirdMax([2, 2, 3, 1]), 1)
+        self.assertEqual(1, self.s.thirdMax([2, 2, 3, 1]))
 
 
 if __name__ == '__main__':

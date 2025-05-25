@@ -6,13 +6,13 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        self.assertEqual(self.s.numberOfSteps(14), 6)
+        self.assertEqual(6, self.s.numberOfSteps(14))
 
     def test02(self):
-        self.assertEqual(self.s.numberOfSteps(8), 4)
+        self.assertEqual(4, self.s.numberOfSteps(8))
 
     def test03(self):
-        self.assertEqual(self.s.numberOfSteps(123), 12)
+        self.assertEqual(12, self.s.numberOfSteps(123))
 
 
 if __name__ == '__main__':

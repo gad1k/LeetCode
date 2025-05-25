@@ -6,16 +6,16 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        result = self.s.findMaxAverage([1, 12, -5, -6, 50, 3], 4)
-        self.assertEqual(result, 12.75)
+        r = self.s.findMaxAverage([1, 12, -5, -6, 50, 3], 4)
+        self.assertEqual(12.75, r)
 
     def test02(self):
-        result = self.s.findMaxAverage([5], 1)
-        self.assertEqual(result, 5.00)
+        r = self.s.findMaxAverage([5], 1)
+        self.assertEqual(5.00, r)
 
     def test03(self):
-        result = self.s.findMaxAverage([-1], 1)
-        self.assertEqual(result, -1.00)
+        r = self.s.findMaxAverage([-1], 1)
+        self.assertEqual(-1.00, r)
 
 
 if __name__ == '__main__':

@@ -6,13 +6,16 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        self.assertEqual(self.s.maximumWealth([[1, 2, 3], [3, 2, 1]]), 6)
+        r = self.s.maximumWealth([[1, 2, 3], [3, 2, 1]])
+        self.assertEqual(6, r)
 
     def test02(self):
-        self.assertEqual(self.s.maximumWealth([[1, 5], [7, 3], [3, 5]]), 10)
+        r = self.s.maximumWealth([[1, 5], [7, 3], [3, 5]])
+        self.assertEqual(10, r)
 
     def test03(self):
-        self.assertEqual(self.s.maximumWealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]]), 17)
+        r = self.s.maximumWealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]])
+        self.assertEqual(17, r)
 
 
 if __name__ == '__main__':

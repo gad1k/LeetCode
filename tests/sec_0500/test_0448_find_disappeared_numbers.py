@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         nums = [4, 3, 2, 7, 8, 2, 3, 1]
-        self.assertListEqual(self.s.findDisappearedNumbers(nums), [5, 6])
+        self.assertListEqual([5, 6], self.s.findDisappearedNumbers(nums))
 
     def test02(self):
         nums = [1, 1]
-        self.assertListEqual(self.s.findDisappearedNumbers(nums), [2])
+        self.assertListEqual([2], self.s.findDisappearedNumbers(nums))
 
 
 if __name__ == '__main__':

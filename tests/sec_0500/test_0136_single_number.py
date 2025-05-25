@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         nums = [2, 2, 1]
-        self.assertEqual(self.s.singleNumber(nums), 1)
+        self.assertEqual(1, self.s.singleNumber(nums))
 
     def test02(self):
         nums = [4, 1, 2, 1, 2]
-        self.assertEqual(self.s.singleNumber(nums), 4)
+        self.assertEqual(4, self.s.singleNumber(nums))
 
     def test03(self):
         nums = [1]
-        self.assertEqual(self.s.singleNumber(nums), 1)
+        self.assertEqual(1, self.s.singleNumber(nums))
 
 
 if __name__ == '__main__':

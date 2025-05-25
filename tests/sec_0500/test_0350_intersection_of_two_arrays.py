@@ -6,12 +6,12 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        result = self.s.intersection([1, 2, 2, 1], [2, 2])
-        self.assertListEqual(result, [2])
+        r = self.s.intersection([1, 2, 2, 1], [2, 2])
+        self.assertListEqual([2], r)
 
     def test02(self):
-        result = self.s.intersection([4, 9, 5], [9, 4, 9, 8, 4])
-        self.assertListEqual(result, [9, 4])
+        r = self.s.intersection([4, 9, 5], [9, 4, 9, 8, 4])
+        self.assertListEqual([9, 4], r)
 
 
 if __name__ == '__main__':

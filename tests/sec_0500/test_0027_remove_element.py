@@ -8,14 +8,14 @@ class TestSolution(TestCase):
     def test01(self):
         nums = [3, 2, 2, 3]
         k = self.s.removeElement(nums, 3)
-        self.assertEqual(k, 2)
-        self.assertListEqual(nums, [2, 2, 3, 3])
+        self.assertEqual(2, k)
+        self.assertListEqual([2, 2, 3, 3], nums)
 
     def test02(self):
         nums = [0, 1, 2, 2, 3, 0, 4, 2]
         k = self.s.removeElement(nums, 2)
-        self.assertEqual(k, 5)
-        self.assertListEqual(nums, [0, 1, 4, 0, 3, 2, 2, 2])
+        self.assertEqual(5, k)
+        self.assertListEqual([0, 1, 4, 0, 3, 2, 2, 2], nums)
 
 
 if __name__ == '__main__':

@@ -8,17 +8,17 @@ class TestSolution(TestCase):
     def test01(self):
         nums = [3, 1, 2, 4]
         self.s.sortArrayByParity(nums)
-        self.assertListEqual(nums, [2, 4, 3, 1])
+        self.assertListEqual([2, 4, 3, 1], nums)
 
     def test02(self):
         nums = [0]
         self.s.sortArrayByParity(nums)
-        self.assertListEqual(nums, [0])
+        self.assertListEqual([0], nums)
 
     def test03(self):
         nums = [3, 1]
         self.s.sortArrayByParity(nums)
-        self.assertListEqual(nums, [3, 1])
+        self.assertListEqual([3, 1], nums)
 
 
 if __name__ == '__main__':

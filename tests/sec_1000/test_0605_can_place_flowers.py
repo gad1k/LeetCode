@@ -6,20 +6,20 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        result = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 1)
-        self.assertTrue(result)
+        r = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 1)
+        self.assertTrue(r)
 
     def test02(self):
-        result = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 2)
-        self.assertFalse(result)
+        r = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 2)
+        self.assertFalse(r)
 
     def test03(self):
-        result = self.s.canPlaceFlowers([1, 0, 0, 0, 0, 0, 1], 2)
-        self.assertTrue(result)
+        r = self.s.canPlaceFlowers([1, 0, 0, 0, 0, 0, 1], 2)
+        self.assertTrue(r)
 
     def test04(self):
-        result = self.s.canPlaceFlowers([1], 0)
-        self.assertTrue(result)
+        r = self.s.canPlaceFlowers([1], 0)
+        self.assertTrue(r)
 
 
 if __name__ == '__main__':
